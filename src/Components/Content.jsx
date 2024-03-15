@@ -1,16 +1,17 @@
 import React from 'react'
 import Footer from './Footer'
-import '../Styles/content.css'
 import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import Navbar from './Navbar';
+import { WhatsappIcon } from 'react-share';
+import { WhatsappShareButton } from 'react-share';
 
 const Content = () => {
   return (
     <>
       <div >
         <div className=''>
-          <Navbar/>
+          <Navbar />
           <div className='bg-slate-200 flex flex-col'>
             <div className='flex justify-between '>
               <h2 className='font-bold text-2xl mt-8 ml-10'>Dashboard</h2>
@@ -65,9 +66,15 @@ const Content = () => {
                     <button className="ml-36 mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start Here</button>
                   </div>
                 </div><hr />
-                <div>
-                  <button className="ml-16 mt-4 mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Share On WhatsApp</button>
-                </div>
+                <WhatsappShareButton
+                  url="https://www.whatsapp.com/"
+                  title="sharing content"
+                  className="ml-16 mt-4 mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center space-x-2"
+                >
+                  <WhatsappIcon size={32} round={true} logoFillColor="white" />
+                  <span>Share On WhatsApp</span>
+                </WhatsappShareButton>
+
               </div>
 
             </div>
