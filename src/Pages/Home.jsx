@@ -5,7 +5,6 @@ import Content from '../Components/Content'
 const Home = () => {
   return (
     <div>
-        <Navbar/>
         <Content/>
     </div>
   )

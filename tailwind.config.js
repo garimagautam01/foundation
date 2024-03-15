@@ -6,11 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'dull-gradient': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
+      opacity: {
+        '67': '.67',
+      }
     },
   },
-},
   plugins: [],
 }
 
