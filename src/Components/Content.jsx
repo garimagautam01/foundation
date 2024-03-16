@@ -5,8 +5,10 @@ import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import Navbar from './Navbar';
 import { WhatsappIcon } from 'react-share';
 import { WhatsappShareButton } from 'react-share';
-
+import { useAuth0 } from "@auth0/auth0-react";
 const Content = () => {
+  const { loginWithRedirect,logout ,user, isAuthenticated, isLoading  } = useAuth0();
+
   return (
     <>
       <div >
@@ -25,7 +27,10 @@ const Content = () => {
                   <div class="absolute inset-0 bg-black opacity-50 rounded-t-xl"></div>
                   <div class="absolute inset-0 flex flex-col justify-start items-start p-4 bg-black bg-opacity-40 rounded-t-xl text-left">
                     <div className='mt-72 ml-80'>
-                      <h2 class="text-red-600 font-bold text-5xl">Hello Garima Gautam</h2>
+                      {
+                        isAuthenticated?(<h2 class="text-red-600 font-bold text-5xl">Hello {user.name}</h2>):(<h2 class="text-red-600 font-bold text-5xl">Please signup</h2>)
+                      }
+                      
                       <h4 class="text-white mt-6 italic">Initial push is the toughest! Go through the learning modules, or reach out to your fundraising manager to level up.</h4>
                     </div>
                   </div>
