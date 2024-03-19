@@ -5,9 +5,7 @@ const Navbar = () => {
     return (
         <div>
             <div className='flex justify-between h-20'>
-                <div className="w-40 h-40">
-                    <img src="src/images/logo.png" alt="logo" />
-                </div>
+                <div className="w-40 h-40"></div>
                 <div className='flex justify-between'>
                     {
                 
