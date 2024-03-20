@@ -13,7 +13,6 @@ const Content = () => {
     <>
       <div >
         <div className=''>
-          <Navbar />
           <div className='bg-slate-200 flex flex-col'>
             <div className='flex justify-between '>
               <h2 className='font-bold text-2xl mt-8 ml-10'>Dashboard</h2>
@@ -59,8 +58,8 @@ const Content = () => {
                       <div className='w-96 h-1.5 bg-slate-300 rounded-xl mt-6'></div>
                     </div>
                     <div className='mt-10 flex justify-between'>
-                      <button className="ml-16 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rewards</button>
-                      <button className="mr-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Copy Donation Link</button>
+                      <button className="ml-20 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rewards</button>
+                      <button className="mr-16 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Donate Here</button>
                     </div>
                     <h5 className='mt-4 ml-20'>Unlock <span className='font-bold'>Ninja Level</span> at 5000</h5>
                     <div className='mt-8'>

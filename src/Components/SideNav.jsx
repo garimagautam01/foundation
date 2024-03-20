@@ -16,7 +16,7 @@ const SideNav = () => {
 
   return (
     <div>
-      <div className='w-48 ht-screen mt-4 ml-4 '>
+      <div className='w-48 ht-screen mt-20 ml-4 '>
         <ul className="font-bold gap-2 flex flex-col ">
           {links.map((link) => (
             <li key={link.name}>
